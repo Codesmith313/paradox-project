@@ -1,0 +1,103 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: green;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 30% 50%;
+    grid-template-areas: 
+    'header header header'
+    'sidebar mission mission'
+    'sidebar purpose achievement'
+    ;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    height: 99%;
+    width: 99%;
+}
+
+#head{
+    display: grid;
+    place-items: center;
+    grid-area: header;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-area: sidebar;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+button{ 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    font-size: larger;
+}
+
+#content1{
+    grid-area: mission;
+    font-size: x-large;
+     border: 1px;
+    border-color: white;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+}
+
+#content2{
+    grid-area: purpose;
+    font-size: x-large;
+     border: 1px;
+    border-color: white;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+    background-color: palevioletred;
+}
+
+#content3{
+    grid-area: achievement;
+    font-size: x-large;
+     border: 1px;
+    border-color: white;
+    border-style: solid;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    color: black;
+}
+
