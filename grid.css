@@ -69,7 +69,7 @@ button{
 
 #content1{
     grid-area: mission;
-    font-size: x-large;
+    font-size: large;
      border: 1px;
     border-color: white;
     border-style: solid;
@@ -80,7 +80,7 @@ button{
 
 #content2{
     grid-area: purpose;
-    font-size: x-large;
+    font-size: large;
      border: 1px;
     border-color: white;
     border-style: solid;
@@ -91,7 +91,7 @@ button{
 
 #content3{
     grid-area: achievement;
-    font-size: x-large;
+    font-size: large;
      border: 1px;
     border-color: white;
     border-style: solid;
