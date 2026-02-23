@@ -1,0 +1,90 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#navbar{
+    background-color: aqua;
+     position: fixed;
+     top: 0;
+}
+
+nav{
+    display: flex;
+    height: 20%;
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+#logo{
+    height: 100% !important;
+    width: 20% !important;
+}
+
+#menu{
+    font-size: xxx-large;
+}
+
+#visible{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    width: 50%;
+    right: 0%;
+
+}
+
+#info{
+    white-space: wrap;
+    margin-top: 10%;
+    background-image: url(car2.jpg);
+    background-size: cover;
+    border-radius:0.3cm;
+    height: 60%;
+    color: blanchedalmond;
+
+}
+
+#info p{
+    font-size: x-large;
+}
+
+#float{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#float div{
+    text-align: center;
+}
+
+
+
+.circle{
+    border-radius: 100cm;
+}
+
+.icon{
+    padding: 10px;
+}
+
+#help{
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 40%;
+}
+
+.enter{
+    position: absolute;
+    right: 0%   ;
+}
