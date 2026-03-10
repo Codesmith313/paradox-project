@@ -23,30 +23,40 @@ function validate(e){
        if(test1==false){
               document.getElementsByClassName("warn3")[0].style.display="inline";
               document.getElementsByClassName("warn3")[1].style.display="inline";
-              document.getElementById("container").style.height="100%"
+       }else{
+              document.getElementsByClassName("warn3")[0].style.display="none";
+              document.getElementsByClassName("warn3")[1].style.display="none";
        }
 
         if(test2==false){
               document.getElementsByClassName("warn2")[0].style.display="inline";
-              document.getElementsByClassName("warn2")[1].style.display="inline";
-              document.getElementById("container").style.height="100%";
+              document.getElementsByClassName("warn2")[1].style.display="inline";;
+       }else{
+              document.getElementsByClassName("warn2")[0].style.display="none";
+              document.getElementsByClassName("warn2")[1].style.display="none";
        }
 
         if(test3==false){
               document.getElementsByClassName("warn4")[0].style.display="inline";
-              document.getElementsByClassName("warn4")[1].style.display="inline";
-              document.getElementById("container").style.height="100%";
+              document.getElementsByClassName("warn4")[1].style.display="inline";;
+       }else{
+              document.getElementsByClassName("warn4")[0].style.display="none";
+              document.getElementsByClassName("warn4")[1].style.display="none";
        }
 
         if(password.length<8){
               document.getElementsByClassName("warn1")[0].style.display="inline";
-              document.getElementsByClassName("warn1")[1].style.display="inline";
-              document.getElementById("container").style.height="100%";
+              document.getElementsByClassName("warn1")[1].style.display="inline";;
+       }else{
+              document.getElementsByClassName("warn1")[0].style.display="none";
+              document.getElementsByClassName("warn1")[1].style.display="none";
        }
 
         if(password!=confirm){
               document.getElementsByClassName("warning")[0].style.display="inline";
-              document.getElementsByClassName("warning")[1].style.display="inline";
-              document.getElementById("container").style.height="100%";
+              document.getElementsByClassName("warning")[1].style.display="inline";;
+       }else{
+              document.getElementsByClassName("warning")[0].style.display="none";
+              document.getElementsByClassName("warning")[1].style.display="none"
        }
 }
