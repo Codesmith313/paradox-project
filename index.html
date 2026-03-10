@@ -4,61 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="java.css">
+    <script src="java.js" defer></script>
 </head>
 <body>
     <div id="container">
+        <form id="contain">
+            <label for="fname">Firstname:</label>
+            <input type="text" name="fname" id="fname">
 
-    <h1 id="head">Fluttercom</h1>
-    
-    <div id="sidebar">
-        <button><a href="home.html">HOME</a>
-        <button><a href="about.html">ABOUT US</a></button>
-        <button><a href="contact.html">CONTACT US</a></button>
-        <button><a href="profile.HTML">Profile</a></button>
-    </div>
+            <label for="lname">Lastname:</label>
+            <input type="text" name="lname" id="lname">
 
-    <div id="content1">
-        <h1>OUR MISSION</h1>
-        <p>
-           Lorem ipsum dolor sit amet consectetur 
-           adipisicing elit. Iusto laborum velit 
-           doloribus illo? Dicta, voluptate, quasi 
-           harum autem molestiae exercitationem 
-           beatae, officiis fuga reiciendis eligendi 
-           voluptatem sapiente impedit blanditiis 
-           saepe.
-        </p>
-    </div>
+            <label for="phone">Phone no:</label>
+            <input type="number" name="phone" id="phone">
 
-    <div id="content2">
-        <h1>OUR PURPOSE</h1>
-        <p>
-           Lorem ipsum dolor sit amet consectetur 
-           adipisicing elit. Iusto laborum velit 
-           doloribus illo? Dicta, voluptate, quasi 
-           harum autem molestiae exercitationem 
-           beatae, officiis fuga reiciendis eligendi 
-           voluptatem sapiente impedit blanditiis 
-           saepe. 
-        </p>
-    </div>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail">
+            
+            <label for="pin">Password:</label>
+            <input type="password" name="pin" id="pin">
 
-    <div id="content3">
-        <h1>OUR ACHIEVEMENT</h1>
-        <p>
-           Lorem ipsum dolor sit amet consectetur 
-           adipisicing elit. Iusto laborum velit 
-           doloribus illo? Dicta, voluptate, quasi 
-           harum autem molestiae exercitationem 
-           beatae, officiis fuga reiciendis eligendi 
-           voluptatem sapiente impedit blanditiis 
-           saepe. 
-        </p>
-        <input type="text" id="inp">
-    </div>
+            <p class="warn1"><i class="fa-solid fa-circle-exclamation warn1"></i>should not be less than 8 characters</p>
+            <p class="warn2"><i class="fa-solid fa-circle-exclamation warn2"></i>should contain capital letter</p>
+            <p class="warn3"><i class="fa-solid fa-circle-exclamation warn3"></i>should contain a number</p>
+            <p class="warn4"><i class="fa-solid fa-circle-exclamation warn4"></i>should contain a special character</p>
 
+            <label for="pin2">Confirm Password:</label>
+            <input type="password" name="pin2" id="pins">
 
+            <p class="warning"><i class="fa-solid fa-circle-exclamation warning"></i>password doesnt match</p>
+
+            <input type="submit" id="submitbtn" onclick="validate(event)">
+        </form>
     </div>
 </body>
 </html>
